@@ -25,7 +25,10 @@ namespace C_Sharp_Final
             {
                 for (int j = 0; j < SIZE; j++)
                 {
-                    if (i % 2 == 0)
+                    if (j % 2 == 0 && i % 2 == 0)
+                    {
+                        someArray[i, j] = '*';
+                    } else if (j % 2 == 1 && i % 2 == 1)
                     {
                         someArray[i, j] = '*';
                     } else
